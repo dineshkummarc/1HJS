@@ -16,9 +16,9 @@
         
             test('get', function(){
                 equals(_(o).get('sub.property'), o.sub.property, "The returned value is o.sub.property");
-                equals(_(undefined).get('sub.property'), undefined, "get on an undefined object returns undefined");
-                equals(_(o).get('sub.not_there'), undefined, "get on an undefined property returns undefined");
-                equals(_(o).get('undefined.property'), undefined, "get on an undefined property returns undefined");
+                equals(_(undefined).get('sub.property'), undefined, "get() on an undefined object returns undefined");
+                equals(_(o).get('sub.not_there'), undefined, "get() on an undefined property returns undefined");
+                equals(_(o).get('undefined.property'), undefined, "get() on an undefined property returns undefined");
             });
         </script>  
     </head>  
