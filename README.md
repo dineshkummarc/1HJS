@@ -30,7 +30,7 @@ I'm not a fan of built-in types augmentation so I use a wrapper function:
 
 And now the null check on `obj` is done for me!
 
-That's what this tiny library is about.
+That's what this tiny library is about. Docs, code and tests (in that order) in one small hour.
 
 License
 =======
