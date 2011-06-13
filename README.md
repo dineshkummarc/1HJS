@@ -28,7 +28,7 @@ I'm not a fan of built-in types augmentation so I use a wrapper function:
         //do something
     }
 
-And now the null check on `obj` is done for me inside the `_` function!
+And now the null check on `obj` is done for me!
 
 That's what this tiny library is about.
 
