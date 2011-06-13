@@ -3,6 +3,9 @@
     <head>
         <meta charset='utf-8'>
         <title>get.js tests</title>
+        <link rel="stylesheet" href="qunit.css" type="text/css">  
+        <script type="text/javascript" src="qunit.js"></script>  
+        
         <script type="text/javascript" src="../get.js"></script>
         <script type="text/javascript">
             var o = {
@@ -10,13 +13,20 @@
                     property : Math.PI
                 }
             };
-            console.log(_(o).get('sub.property'));
-            console.log(_(undefined).get('sub.property'));
-            console.log(_(o).get('sub.not_there'));
-            console.log(_(o).get('undefined.property'));
-            
-        </script>
-    </head>
-    <body>
-    </body>
-</html>
+        
+            test('get', function(){
+                equals(_(o).get('sub.property'), o.sub.property, "The returned value is o.sub.property");
+                equals(_(undefined).get('sub.property'), undefined, "get on an undefined object returns undefined");
+                equals(_(o).get('sub.not_there'), undefined, "get on an undefined property returns undefined");
+                equals(_(o).get('undefined.property'), undefined, "get on an undefined property returns undefined");
+            });
+        </script>  
+    </head>  
+    <body>  
+        <h1 id="qunit-header">QUnit Test Suite</h1>  
+        <h2 id="qunit-banner"></h2>  
+        <div id="qunit-testrunner-toolbar"></div>  
+        <h2 id="qunit-userAgent"></h2>  
+        <ol id="qunit-tests"></ol>  
+    </body>  
+</html> 
