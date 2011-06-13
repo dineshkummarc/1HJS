@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <title>get.js tests</title>
+        <script type="text/javascript" src="../get.js"></script>
+        <script type="text/javascript">
+            var o = {
+                sub : {
+                    property : Math.PI
+                }
+            };
+            console.log(_(o).get('sub.property'));
+            console.log(_(undefined).get('sub.property'));
+            console.log(_(o).get('sub.not_there'));
+            console.log(_(o).get('undefined.property'));
+            
+        </script>
+    </head>
+    <body>
+    </body>
+</html>
