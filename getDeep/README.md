@@ -28,4 +28,4 @@ That's what this tiny library is about. Docs, code and tests (in that order) in 
 
 License
 =======
-[MIT](/floriancargoet/1HJS/blob/master/LICENSE)
+[MIT](/floriancargoet/1HJS/blob/master/getDeep/LICENSE)
